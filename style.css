@@ -1,0 +1,163 @@
+/*FONTE EXTERNA POPPINS*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/*CONFIG P/ TODO O SITE*/
+*{
+    margin: 0;/*sem margem*/
+    padding:0;/*sem distancia entre o conteúdo de um elemento e suas bordas*/
+    box-sizing: border-box;/*ler as anotações no caderno*/
+    font-family: 'Poppins', sans-serif;
+}
+
+/*CONFIG SECTION*/
+section{
+    position:relative;/*ler anotação no caderno*/
+    width:100%;/*pag toda*/
+    min-width: 100vh;/*100% da área visivel da altura*/
+    padding:100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+
+/*CONFIG HEADER*/
+header{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    padding:20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    position:relative;
+    max-width:80px;
+
+}
+
+header ul{
+position:relative;
+display: flex;
+}
+
+header ul li{
+    list-style: none;
+}
+
+header ul li a{
+    display: inline-block;
+    color:#333;
+    font-weight: 400;
+    margin-left:40px;
+    text-decoration: none;/*tira os sublinhados dos links*/
+}
+
+/*CONFIG CONTEUDO*/
+.conteudo{
+    position:relative;
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.conteudo .textbox{
+    position:relative;
+    max-width:600px;/*aumentou o tamanho da largura do texto*/
+}
+
+.conteudo .textbox h2{
+    color:#333;
+    font-size:4em;/*em se adapta ao tamanho da fonte utilizada*/
+    line-height: 1.4em;
+    font-weight:500;/*largura/expessura da fonte*/
+}
+
+.conteudo .textbox h2 span{
+    color:#017143;
+    font-size:1.2em;/*aumentar o tamanho da fonte*/
+    font-weight:900;/*expessura da fonte*/
+}
+
+.conteudo .textbox p{
+    color:#333;
+}
+.conteudo .textbox a{/*botao*/
+    display: inline-block;
+    margin-top:20px;
+    padding:8px 20px;
+    background:#017143;/*cor de fundo do botao*/
+    color:#fff;/*cor da fonte*/
+    border-radius:40px;
+    font-weight:500;
+    letter-spacing: 1px;/*espaçamento entre os textos*/
+    text-decoration: none;/*tira o sublihado do link*/
+}
+
+.conteudo .imgbox{
+    width:600px;/*tamanho da largura*/
+    display:flex;
+    justify-content: flex-end;/*alinhas os itens ao final do container*/
+    padding-right: 50px;/*espaçamento das bordas*/
+    margin-top:50px;
+}
+.conteudo .imgbox img{
+    max-width: 340px;/*largura da imagem*/
+}
+
+/*CONFIG BOTOES DAS BEBIDAS*/
+.thumb{
+    position:absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);/*eixo x*/
+    display:flex;
+}
+.thumb li{
+    list-style:none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.thumb li:hover{
+    transform: translateY(-15px);/*aqui move a imagem para cima, eixo Y*/
+}
+.thumb li img{
+    max-width:60px;
+}
+
+/*CONFI SOCIAL MEDIA*/
+.sci{
+    position:absolute;
+    top:50%;
+    right:30px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;/*alinha ao centro do container*/
+    align-items:center;/*alinhado ao centro da box*/
+    flex-direction:column;/*direção dos itens, vao ficar em coluna*/
+}
+.sci li{
+    list-style: none;
+}
+.sci li a{
+    display: inline-block;
+    margin: 5px 0;
+    transform: scale(0.6);
+    filter:invert(1);/*muda a cor*/
+}
+
+.circulo{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: #017143;
+    clip-path: circle(600px at right 800px);/*600 px para a direita*/
+}
